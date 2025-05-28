@@ -1,0 +1,70 @@
+seed_everything: 3407
+
+trainer:
+  strategy: ddp_find_unused_parameters_true
+
+  devices: 2
+
+  logger:
+    - class_path: lightning.pytorch.loggers.WandbLogger
+      init_args:
+        project: SALUT
+        name: salut_v0
+        save_dir: logs/wandb/salut_v0
+
+  callbacks:
+    - class_path: lightning.pytorch.callbacks.LearningRateMonitor
+    - class_path: lightning.pytorch.callbacks.ModelCheckpoint
+      init_args:
+        save_top_k: -1
+        every_n_epochs: 1
+
+  max_epochs: 300
+  check_val_every_n_epoch: 1
+
+model:
+  class_path: core.model.trainer.VLog2StyleTrainer4D
+  init_args:
+    name: salut_v0
+    model_args:
+      backbone: "vgg"
+      dim: 17
+    train_args:
+      batch_size: 1
+      losses:
+        tv_weight: 1
+        mn_weight: 1
+        perceptual_content_weight: 0.0
+        perceptual_style_weight: 0.0
+        lpips_weight: 10
+        lab_loss_weight: 100
+        gan:
+          paired:
+            generator_weight: 1
+            discriminator_weight: 1
+          unpaired:
+            generator_weight: 1
+            discriminator_weight: 1
+
+    optim_args:
+      learning_rate: 1e-4
+      weight_decay: 0.01
+
+data:
+  class_path: core.dataset.End2EndDataModule
+  init_args:
+    vlog_image_dir:
+    rgb_image_dir:
+    lut_dir:
+    vlog_image:
+    rgb_image:
+    vlog_lut:
+    rgb_lut:
+    val_vlog_image:
+    val_rgb_image:
+    val_vlog_lut:
+    val_rgb_lut:
+    lut_augment: true
+    batch_size: 1
+    output_resolution: 256
+    fast_eval: true

@@ -1,0 +1,5 @@
+# ninja log v6
+5	1070	1725632687977587851	/mnt/slurm_home/zrgong/4DLUT/quadrilinear_cpp/build/temp.linux-x86_64-cpython-39/src/quadrilinear4d_kernel.o	4ef1328fc36fdbca
+3	24553	1725632687977587851	/mnt/slurm_home/zrgong/4DLUT/quadrilinear_cpp/build/temp.linux-x86_64-cpython-39/src/quadrilinear4d_cuda.o	2f2467b24d33a0f6
+17	1380	1726668962209675931	/mnt/slurm_home/zrgong/NLUT4D/quadrilinear_cpp/build/temp.linux-x86_64-cpython-39/src/quadrilinear4d_kernel.o	46c7b72c617023f1
+14	30850	1726668962209675931	/mnt/slurm_home/zrgong/NLUT4D/quadrilinear_cpp/build/temp.linux-x86_64-cpython-39/src/quadrilinear4d_cuda.o	3585493c898d2779

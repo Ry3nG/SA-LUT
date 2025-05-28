@@ -1,0 +1,9 @@
+# ninja log v5
+0	1008	1738755971	/data/zrgong/projects/ATLAS/quadrilinear_cpp/build/temp.linux-x86_64-cpython-312/src/quadrilinear4d_kernel.o	e60d2d19a6f1cf6d
+0	18725	1738755988	/data/zrgong/projects/ATLAS/quadrilinear_cpp/build/temp.linux-x86_64-cpython-312/src/quadrilinear4d_cuda.o	321c498526f4facf
+13	876	1738853770	/data/zrgong/projects/ATLAS/quadrilinear_cpp/build/temp.linux-x86_64-cpython-312/src/quadrilinear4d_kernel.o	4cda51698b2d4284
+13	19078	1738853788	/data/zrgong/projects/ATLAS/quadrilinear_cpp/build/temp.linux-x86_64-cpython-312/src/quadrilinear4d_cuda.o	5fc5f9e5edbe7216
+12	1006	1738909990	/data/zrgong/projects/ATLAS/quadrilinear_cpp/build/temp.linux-x86_64-cpython-312/src/quadrilinear4d_kernel.o	e60d2d19a6f1cf6d
+12	16198	1738910005	/data/zrgong/projects/ATLAS/quadrilinear_cpp/build/temp.linux-x86_64-cpython-312/src/quadrilinear4d_cuda.o	321c498526f4facf
+12	996	1738941401	/data/zrgong/projects/ATLAS/quadrilinear_cpp/build/temp.linux-x86_64-cpython-312/src/quadrilinear4d_kernel.o	4cda51698b2d4284
+12	15877	1738941416	/data/zrgong/projects/ATLAS/quadrilinear_cpp/build/temp.linux-x86_64-cpython-312/src/quadrilinear4d_cuda.o	5fc5f9e5edbe7216

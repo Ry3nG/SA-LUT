@@ -1,0 +1,8 @@
+setup.py
+quadrilinear4d.egg-info/PKG-INFO
+quadrilinear4d.egg-info/SOURCES.txt
+quadrilinear4d.egg-info/dependency_links.txt
+quadrilinear4d.egg-info/top_level.txt
+src/quadrilinear4d.cpp
+src/quadrilinear4d_cuda.cpp
+src/quadrilinear4d_kernel.cu
