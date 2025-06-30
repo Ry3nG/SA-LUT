@@ -1,4 +1,5 @@
 # SA-LUT: Spatial Adaptive 4D Look-Up Table for Photorealistic Style Transfer
+🎉 **Accepted at ICCV 2025**
 
 🤗 Download the PST50 benchmark dataset on [Hugging Face](https://huggingface.co/datasets/zrgong/PST50)
 
