@@ -4,7 +4,7 @@
 SHELL := /bin/bash
 ENV_NAME := salut_env
 
-.PHONY: setup
+.PHONY: setup inference download-ckpts
 
 setup:
 	@echo "========================================="
@@ -24,3 +24,18 @@ setup:
 	@echo "Setup complete! Activate with:"
 	@echo "  conda activate $(ENV_NAME)"
 	@echo "========================================="
+
+inference:
+	@echo "========================================="
+	@echo "SA-LUT Inference CLI"
+	@echo "========================================="
+	@echo ""
+	@echo "Starting inference script (loading PyTorch libraries...)"
+	@bash -c "source $$(conda info --base)/etc/profile.d/conda.sh && conda activate $(ENV_NAME) && python inference_cli.py"
+
+download-ckpts:
+	@echo "========================================="
+	@echo "Download SA-LUT Checkpoints"
+	@echo "========================================="
+	@echo ""
+	@bash -c "source $$(conda info --base)/etc/profile.d/conda.sh && conda activate $(ENV_NAME) && python download_checkpoints.py"

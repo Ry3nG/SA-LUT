@@ -419,7 +419,7 @@ class VLog2StyleNet4D(nn.Module):
 
         # Context extractor to optionally guide the 4D LUT fusion.
         self.context_extractor = CrossAttentionContextGenerator(
-            target_resolution=(256, 256)
+            target_resolution=(512, 512)
         )
 
         # 3) Classifier for weight prediction:

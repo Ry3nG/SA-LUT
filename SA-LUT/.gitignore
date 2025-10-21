@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Model checkpoints (download separately)
+ckpts/**/*.ckpt
+ckpts/**/*.ckpt.state.pt
+ckpts/**/*.pt
+ckpts/**/*.pth
+!ckpts/vgg_normalised.pth  # Keep VGG weights if needed
+
+# Training outputs
+outputs/
+output/
+stylized_*/
+results/
+logs/
+runs/
+wandb/
+
+# Data (download separately)
+data/*.zip
+data/PST50/.cache/
+
+# Temporary files
+*.log
+*.tmp
+.DS_Store
+.cache/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
