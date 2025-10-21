@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SA-LUT: Spatial Adaptive 4D Look-Up Table for Photorealistic Style Transfer - ICCV 2025">
+    <title>SA-LUT: Spatial Adaptive 4D Look-Up Table for Photorealistic Style Transfer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="badge">ICCV 2025</div>
+            <h1>SA-LUT: Spatial Adaptive 4D Look-Up Table for<br>Photorealistic Style Transfer</h1>
+
+            <div class="authors">
+                <span>Zerui Gong<sup>1</sup></span>,
+                <span>Zhonghua Wu<sup>2</sup></span>,
+                <span>Qingyi Tao<sup>2</sup></span>,
+                <span>Qinyue Li<sup>2</sup></span>,
+                <span>Chen Change Loy<sup>1</sup></span>
+            </div>
+
+            <div class="affiliations">
+                <p><sup>1</sup>S-Lab, Nanyang Technological University &nbsp;&nbsp; <sup>2</sup>SenseTime Research</p>
+            </div>
+
+            <!-- Links -->
+            <div class="links">
+                <a href="https://arxiv.org/abs/2506.13465" class="link-button" target="_blank">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                        <path d="M4.5 11.5A.5.5 0 0 1 5 11h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm0-2A.5.5 0 0 1 5 9h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm0-2A.5.5 0 0 1 5 7h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm0-2A.5.5 0 0 1 5 5h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                    Paper
+                </a>
+                <a href="https://github.com/Ry3nG/SA-LUT" class="link-button" target="_blank">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    Code
+                </a>
+                <a href="https://huggingface.co/datasets/zrgong/PST50" class="link-button" target="_blank">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z"/>
+                    </svg>
+                    PST50 Dataset
+                </a>
+                <a href="https://huggingface.co/zrgong/SA-LUT" class="link-button" target="_blank">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M11 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h6zM5 1a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4H5z"/>
+                        <path d="M8 10a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
+                    </svg>
+                    Model
+                </a>
+                <a href="assets/SA-LUT_Poster_ICCV.pdf" class="link-button" target="_blank">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+                        <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                    </svg>
+                    Poster
+                </a>
+            </div>
+        </header>
+
+        <!-- Abstract -->
+        <section class="abstract">
+            <h2>Abstract</h2>
+            <p>
+                Photorealistic style transfer (PST) enables real-world color grading by adapting reference image colors while preserving content structure. Existing methods mainly follow either approaches: generation-based methods that prioritize stylistic fidelity at the cost of content integrity and efficiency, or global color transformation methods such as LUT, which preserve structure but lack local adaptability. To bridge this gap, we propose <strong>Spatial Adaptive 4D Look-Up Table (SA-LUT)</strong>, combining LUT efficiency with neural network adaptability.
+            </p>
+            <p>
+                SA-LUT features: (1) a <strong>Style-guided 4D LUT Generator</strong> that extracts multi-scale features from the style image to predict a 4D LUT, and (2) a <strong>Context Generator</strong> using content-style cross-attention to produce a context map. This context map enables spatially-adaptive adjustments, allowing our 4D LUT to apply precise color transformations while preserving structural integrity.
+            </p>
+            <p>
+                To establish a rigorous evaluation framework for photorealistic style transfer, we introduce <strong>PST50</strong>, the first benchmark specifically designed for PST assessment. Experiments demonstrate that SA-LUT substantially outperforms state-of-the-art methods, achieving a <strong>66.7% reduction in LPIPS score</strong> compared to 3D LUT approaches, while maintaining <strong>real-time performance at 16 FPS</strong> for video stylization.
+            </p>
+        </section>
+
+        <!-- Poster -->
+        <section class="poster">
+            <h2>ICCV 2025 Poster</h2>
+            <div class="poster-container">
+                <img src="assets/SA-LUT Poster ICCV.png" alt="SA-LUT ICCV 2025 Poster" />
+            </div>
+        </section>
+
+        <!-- Citation -->
+        <section class="citation">
+            <h2>Citation</h2>
+            <pre><code>@misc{gong2025salutspatialadaptive4d,
+      title={SA-LUT: Spatial Adaptive 4D Look-Up Table for Photorealistic Style Transfer},
+      author={Zerui Gong and Zhonghua Wu and Qingyi Tao and Qinyue Li and Chen Change Loy},
+      year={2025},
+      eprint={2506.13465},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2506.13465},
+}</code></pre>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2025 S-Lab, Nanyang Technological University</p>
+        </footer>
+    </div>
+</body>
+</html>

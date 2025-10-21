@@ -1,0 +1,13 @@
+# GitHub Pages configuration for SA-LUT
+title: "SA-LUT: Spatial Adaptive 4D Look-Up Table for Photorealistic Style Transfer"
+description: "Official project page for SA-LUT - ICCV 2025"
+authors: "Zerui Gong, Zhonghua Wu, Qingyi Tao, Qinyue Li, Chen Change Loy"
+
+# Theme settings (not used as we have custom HTML, but good to have)
+theme: null
+
+# Exclude these files from the build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

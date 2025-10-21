@@ -4,6 +4,7 @@ PST50/
 .DS_Store
 __pycache__/
 *.pyc
+*.tar.gz
 
 # Data directories
 SA-LUT/data/

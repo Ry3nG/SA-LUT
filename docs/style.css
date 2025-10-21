@@ -1,0 +1,266 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.authors {
+    font-size: 1.2em;
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+.authors span {
+    margin: 0 8px;
+}
+
+.authors sup {
+    font-size: 0.8em;
+    color: #667eea;
+}
+
+.affiliations {
+    font-size: 1em;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+.affiliations sup {
+    color: #667eea;
+}
+
+/* Link Buttons */
+.links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.link-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: white;
+    border: 2px solid #667eea;
+    color: #667eea;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.link-button:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.link-button svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Pipeline Section */
+.pipeline {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.pipeline img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Abstract Section */
+.abstract {
+    padding: 40px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin: 40px 0;
+}
+
+.abstract h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.abstract p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #495057;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.abstract strong {
+    color: #667eea;
+    font-weight: 600;
+}
+
+/* Poster Section */
+.poster {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.poster h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.poster-container {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.poster-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Citation Section */
+.citation {
+    padding: 40px;
+    margin: 40px 0;
+}
+
+.citation h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.citation pre {
+    background: #2c3e50;
+    color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.citation code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #6c757d;
+    border-top: 2px solid #e9ecef;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .authors {
+        font-size: 1em;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link-button {
+        width: 80%;
+        justify-content: center;
+    }
+
+    .abstract {
+        padding: 20px;
+    }
+
+    .abstract p {
+        font-size: 1em;
+        text-align: left;
+    }
+
+    .citation {
+        padding: 20px;
+    }
+
+    .citation pre {
+        font-size: 0.75em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .badge {
+        font-size: 12px;
+        padding: 6px 15px;
+    }
+}
