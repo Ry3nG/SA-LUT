@@ -27,6 +27,21 @@ header {
     border-bottom: 2px solid #e9ecef;
 }
 
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
 .badge {
     display: inline-block;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -218,6 +233,14 @@ footer {
         font-size: 1.8em;
     }
 
+    .logos {
+        gap: 20px;
+    }
+
+    .logo {
+        height: 45px;
+    }
+
     .authors {
         font-size: 1em;
     }
@@ -257,6 +280,14 @@ footer {
 
     h1 {
         font-size: 1.5em;
+    }
+
+    .logos {
+        gap: 15px;
+    }
+
+    .logo {
+        height: 35px;
     }
 
     .badge {
