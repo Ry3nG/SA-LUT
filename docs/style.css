@@ -45,6 +45,11 @@ header {
     flex-shrink: 0;
 }
 
+.logo-center {
+    max-height: 72px;
+    max-width: 170px;
+}
+
 .badge {
     display: inline-block;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
