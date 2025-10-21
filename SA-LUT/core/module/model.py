@@ -389,10 +389,19 @@ class VLog2StyleNet4D(nn.Module):
 
         # 1) Pre-trained VGG for multi-scale feature extraction.
         vgg = net.vgg
-        vgg.load_state_dict(torch.load("ckpts/vgg_normalised.pth", weights_only=True))
+        vgg.load_state_dict(torch.load("ckpts/vgg_normalised.pth", weights_only=False))
         self.encoder = net.Net(vgg)
 
-        standard_lut = read_3dlut_from_file("assets/Standard.cube")
+        import os
+
+        repo_root = os.path.dirname(
+            os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        )
+        standard_cube_path = os.path.join(repo_root, "core", "assets", "Standard.cube")
+        if not os.path.exists(standard_cube_path):
+            # fallback to legacy relative path
+            standard_cube_path = os.path.join(repo_root, "assets", "Standard.cube")
+        standard_lut = read_3dlut_from_file(standard_cube_path)
         self.register_buffer("standard_lut", standard_lut, persistent=False)
 
         # 2) Splatting Blocks to further process (fused) features.

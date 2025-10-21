@@ -33,7 +33,11 @@ class End2EndDataset(Dataset):
         self.lut_augment = lut_augment
         self.mode = mode  # train or val
 
-        self.vlog_to_709_lut = load_cube_file("assets/Standard.cube")
+        repo_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        standard_cube_path = os.path.join(repo_root, "core", "assets", "Standard.cube")
+        if not os.path.exists(standard_cube_path):
+            standard_cube_path = os.path.join(repo_root, "assets", "Standard.cube")
+        self.vlog_to_709_lut = load_cube_file(standard_cube_path)
 
         self.vlog_image_paths = self._get_image_paths(vlog_image_dir, vlog_image)
         self.rgb_image_paths = self._get_image_paths(rgb_image_dir, rgb_image)

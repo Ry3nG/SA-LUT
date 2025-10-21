@@ -2,3 +2,35 @@ raw/
 helper/
 PST50/
 .DS_Store
+__pycache__/
+*.pyc
+
+# Data directories
+SA-LUT/data/
+
+# Checkpoint directories (except vgg_normalised.pth)
+SA-LUT/ckpts/salut_ckpt/
+SA-LUT/ckpts/*.ckpt
+SA-LUT/ckpts/*.pt
+!SA-LUT/ckpts/vgg_normalised.pth
+
+# C++ extension build artifacts
+SA-LUT/quadrilinear_cpp/build/
+SA-LUT/quadrilinear_cpp/dist/
+SA-LUT/quadrilinear_cpp/*.egg-info/
+SA-LUT/trilinear_cpp_torch1.11/build/
+SA-LUT/trilinear_cpp_torch1.11/dist/
+SA-LUT/trilinear_cpp_torch1.11/*.egg-info/
+
+# Output files
+SA-LUT/output_*.png
+SA-LUT/output_*.jpg
+SA-LUT/stylized_*/
+SA-LUT/logs/
+
+# Temporary files
+*.egg
+*.so
+.ninja_deps
+.ninja_log
+build.ninja

@@ -408,7 +408,10 @@ class LUTAugment:
         self.interp_prob = interp_prob
         self.interp_range = interp_range
 
-        base_lut_path = "assets/Standard.cube"
+        repo_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        base_lut_path = os.path.join(repo_root, "core", "assets", "Standard.cube")
+        if not os.path.exists(base_lut_path):
+            base_lut_path = os.path.join(repo_root, "assets", "Standard.cube")
         self.base_lut = read_3dlut_from_file(base_lut_path, return_type="np")
 
     def _scale(self, lut, s_range):
