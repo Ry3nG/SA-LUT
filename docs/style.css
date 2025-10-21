@@ -90,6 +90,15 @@ h1 {
     color: #667eea;
 }
 
+.conference {
+    font-size: 1.1em;
+    color: #2c3e50;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
 /* Link Buttons */
 .links {
     display: flex;
