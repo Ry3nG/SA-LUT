@@ -266,14 +266,13 @@ SA-LUT/
 If you use SA-LUT in your research, please cite:
 
 ```bibtex
-@misc{gong2025salutspatialadaptive4d,
-      title={SA-LUT: Spatial Adaptive 4D Look-Up Table for Photorealistic Style Transfer},
-      author={Zerui Gong and Zhonghua Wu and Qingyi Tao and Qinyue Li and Chen Change Loy},
-      year={2025},
-      eprint={2506.13465},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2506.13465},
+@InProceedings{Gong_2025_ICCV,
+    author    = {Gong, Zerui and Wu, Zhonghua and Tao, Qingyi and Li, Qinyue and Loy, Chen Change},
+    title     = {SA-LUT: Spatial Adaptive 4D Look-Up Table for Photorealistic Style Transfer},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2025},
+    pages     = {18294-18303}
 }
 ```
 
